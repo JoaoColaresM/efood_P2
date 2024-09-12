@@ -1,0 +1,50 @@
+header {
+    flex-direction: column;
+    flex-direction: row;
+    max-width: 540px;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0 / 50%);
+    background-image: url(./../../assets/imagens/Vector.svg);
+    background-size: cover;
+    display: inline-block;
+    gap: 8px;
+    margin-left: 8px;
+    row-gap: 48px;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 6px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    margin-right: 24px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+    color: inherit;
+    font-weight: lighter;
+    font-size: 24px;
+
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 24px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+
+    border: none;
+
+    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
