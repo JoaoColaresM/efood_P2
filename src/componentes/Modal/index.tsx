@@ -17,17 +17,18 @@ const Modal = ({ info, visivel }: Props) => {
     return (
         <ModalDiv className={visivel === fechar ? '' : 'visivel'}>
             <CartaoModal className='container'>
-                <ImgModal style={{ backgroundImage: `url(${info.foto})` }} />
+                <ImgModal>
+                    <img src={info.foto} alt={info.nome} />
+                </ImgModal>
                 <InfosModal>
                     <h2>{info.nome}</h2>
                     <p>{info.descricao}</p>
                     <span>Serve: de {info.porcao}</span>
                     <BotaoModal>Adicionar ao carrinho - R${info.preco}</BotaoModal>
                 </InfosModal>
-                <XFechar
-                    style={{ backgroundImage: `url(${Xfechar})` }}
-                    onClick={() => fecharModal()}
-                />
+                <XFechar onClick={() => fecharModal()}>
+                    <img src={Xfechar} alt="fechar" />
+                </XFechar>
             </CartaoModal>
             <div className="overlay" onClick={() => fecharModal()}></div>
         </ModalDiv>

@@ -5,6 +5,8 @@ export const Cartao = styled.div`
     display: block;
     background-color: #fff;
     padding: 8px;
+    border: 1px solid ${cores.principal};
+    border-top: 0;
     position: relative;
 `
 

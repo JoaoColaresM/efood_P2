@@ -36,12 +36,13 @@ export const CartaoModal = styled.div`
 `
 
 export const ImgModal = styled.div`
-    width: 280px;
-    height: 280px;
-    aspect-ratio: 1/1;
     margin-right: 24px;
-    background-size: cover;
-    background-position: center;
+
+    img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+    }
 `
 
 export const InfosModal = styled.div`
@@ -76,8 +77,11 @@ export const BotaoModal = styled.button`
 `
 
 export const XFechar = styled.div`
-    width: 16px;
-    height: 16px;
-    aspect-ratio: 1/1;
     cursor: pointer;
+
+    img {
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+    }
 `
